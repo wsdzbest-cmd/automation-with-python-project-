@@ -1,0 +1,13 @@
+"Syntax / operator","Meaning","Example"
+"if","Run code if condition is True.","if age >= 18:"
+"elif","Check another condition if earlier conditions
+were False.","elif mark >= 50:"
+"else","Run when no earlier condition was True.","else:"
+"== / !=","Equal / not equal.","x == 10; x != 10"
+"> / < / >= / <=","Greater, less, greater-or-equal, less-or-equal.","age >= 18"
+"and","Both conditions must be True.","age >= 18 and age <= 30"
+"or","At least one condition must be True.","day == 'Fri' or day == 'Sat'"
+"not","Reverses True and False.","if not raining:"
+"in","Checks whether an item exists in a sequence.","if 'Py' in 'Python':"
+"Nested if","An if inside another if.","if age >= 18:\n if ticket:"
+"Conditional expression","Choose a value based on a condition.","status = 'Adult' if age >= 18 else 'Minor'"
