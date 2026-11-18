@@ -14,6 +14,6 @@ def main (page):
    matches_details = []
    championship = soup.find_all("div", {'class':'matchCard'})
    def champion_ship_title (championship):
-       championd_title =championship.contents(0).text
+       championd_title =championship.contents(0).find("h2").txt 
 
 main (page)
