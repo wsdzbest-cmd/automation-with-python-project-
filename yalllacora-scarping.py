@@ -1,3 +1,4 @@
+from matplotlib.pyplot import title
 import requests 
 from bs4 import BeautifulSoup
 import csv 
@@ -9,6 +10,10 @@ def main (page):
    source = page.content
    #parsing the page using lxml parser , turn the byte into normal code html knowing 
    soup = BeautifulSoup(source, 'lxml')
-   print (soup)
+
+   matches_details = []
+   championship = soup.find_all("div", {'class':'matchCard'})
+   def champion_ship_title (championship):
+       championd_title =championship.contents(0).text
 
 main (page)
